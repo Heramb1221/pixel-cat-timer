@@ -17,6 +17,8 @@ export function useCatAnimation(
   const CAT_MOVE_DURATION = 7000; // ms
 
   const moveWindow = (direction: "bottom-right" | "center") => {
+    if (typeof window.require !== "function") return;
+
     window
       .require("electron")
       .ipcRenderer

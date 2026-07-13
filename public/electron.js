@@ -8,7 +8,7 @@ let mainWindow;
 function createMainWindow() {
   mainWindow = new BrowserWindow({
     width: 280,
-    height: 280,
+    height: 340,
     title: "Pixel Cat Timer",
 
     frame: false,
